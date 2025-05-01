@@ -1,0 +1,86 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("././assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-style: normal;
+    font-weight: 400 600 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Stone100);
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Outfit", sans-serif;
+    color: var(--Stone900);
+}
+
+article {
+    display: grid;
+    place-items: center;
+    background-color: var(--White);
+    width: 500px;
+    height: auto;
+    margin-top: 15%;
+    padding: 25px;
+    border-radius: 15px;
+}
+article figure {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+article figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-title h1{
+    font-size: 2.1rem;
+    margin: 15px 0;
+}
+
+.recipe-title p {
+    font-size: 0.75rem;
+    color: var(--Stone600)
+}
+
+.preparation-time {
+    background-color: var(--Rose50);
+    font-size: 13px;
+}
+
+.preparation-time h2 {
+    padding-left: 20px;
+    color: var(--Rose800)
+}
+
+.preparation-time ul li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.preparation-time ul li::marker {
+    color: var(--Rose800);
+}
